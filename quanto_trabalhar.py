@@ -1,4 +1,6 @@
 #Quantas horas preciso trabalhar para comprar isso?
+
+#inputs
 valor_prod = None
 while valor_prod  == None :
     try:
@@ -34,9 +36,11 @@ while hora_trab == None:
     except ValueError:
         print('Digite somente números nessa etapa.')
 
-
+#lógica matemática
 sala_dia = sala_total / dia_trab
 sala_hora = sala_dia / hora_trab
 hora_neces = valor_prod // sala_hora
+
+#resultado
 print('Voce precisa trabalhar:{}'.format(hora_neces))
 
